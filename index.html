@@ -2,66 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", viewport-fit=cover">
-    <title>Yuetian Trading Enterprise</title>
-    <link rel="stylesheet" 
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yuetian Trading Enterprise</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
 <header>
-    <div class="bar">
-        <a class="logo" href="#home">Yuetian Trading Enterprise</a>
-        <nav id="nav">
-            <a href="#home" data-p="home">Home</a>
-            <a href="#market" data-p="market">Marketplace</a>
-            <a href="#auction" data-p="auction">Auction</a>
-            <a href="#order" data-p="order">Orders</a>
-            <a href="#sell" data-p="sell">Sell</a>
-            <a href="#dash" data-p="dash">My Dashboard <b id="badge" hidden></b></a>
-            <a href="login" data-p="login" id="authlink">Login / Register</a>
-        </nav>
-    </div>
+	<div class="bar">
+		<a class="logo" href="#home">
+			<img src="images/logo.png" alt="Yuetian Trading logo">
+			Yuetian Trading
+		</a>
+		<nav>
+			<a href="#home">Home</a>
+			<a href="#market">Marketplace</a>
+			<a href="#auctions">Auctions</a>
+			<a href="#orders">Buy Orders</a>
+			<a href="#sell">Sell</a>
+			<a href="#dash">My Dashboard</a>
+			<a href="#login" id="nav-login">Login / Register</a>
+		</nav>
+	</div>
 </header>
 
 <main>
-    <section class="page" id="p-home">
-        <div class="hero">
-            <h1>Be the next big trade.</h1>
-            <p>Sell it, bid it, or ask for it.</p>
-            <form id="hform">
-                <input name="q" placeholder="Search items" aria-label="Search items">
-                <button class="btn o">Search</button>
-            </form>
-        </div>
-        <div class="hd">
-            <h2>Ending Soon</h2>
-            <a href="#auction">All auctions</a>
-        </div>
-        <div class="grid" id="h-auc"></div>
-        <div class="hd">
-            <h2>Latest Buy Orders</h2>
-            <a href="#orders">All requests</a>
-        </div>
-        <div class="box" id="h-ord"></div>
-        <div class="hd">
-            <h2>Featured Items</h2>
-            <a href="#market">Marketplace</a>
-        </div>
-    </section>
+
+	<section class="page" id="p-home">
+		<div class="hero">
+			<h1>Be the next big trade.</h1>
+			<p>Sell it, bid on it, or ask for it.</p>
+			<form>
+				<input name="q" placeholder="Search items" aria-label="Search items">
+				<button class="btn o">Search</button>
+			</form>
+			<div>
+				<a class="btn g" href="#sell">Start selling</a>
+				<a class="btn g" href="#orders">Post a Buy Order</a>
+			</div>
+		</div>
+		<div class="section-header"><h2>Ending soon</h2><a href="#auctions">All auctions</a></div>
+		<div class="grid"></div>
+		<div class="section-header"><h2>Latest Buy Orders</h2><a href="#orders">All requests</a></div>
+		<div class="box"></div>
+		<div class="section-header"><h2>Featured items</h2><a href="#market">Marketplace</a></div>
+		<div class="grid"></div>
+	</section>
+
+	<section class="page" hidden>
+		<h1>Marketplace</h1>
+	</section>
+
+	<section class="page" hidden>
+		<h1>Buy Orders</h1>
+	</section>
+
+	<section class="page" hidden>
+		<div class="box">
+			<h1>Sell</h1>
+		</div>
+	</section>
+
+	<section class="page" hidden>
+		<p hidden>Item not found. <a href="#market">Back to the marketplace</a></p>
+	</section>
+
+	<section class="page" hidden>
+		<h1></h1>
+		<p class="mut"></p>
+		<div class="box"><h3>Notifications</h3><div></div></div>
+		<div class="two">
+			<div class="box"><h3>My Listings</h3><div></div></div>
+			<div class="box"><h3>My Bids</h3><div></div></div>
+		</div>
+		<div class="box"><h3>My Buy Orders</h3><div></div></div>
+		<div class="box"><h3>My Purchases</h3><div></div></div>
+		<div class="box"><h3>Wishlist</h3><div class="grid"></div></div>
+		<div class="box"><h3>Messages</h3><div></div></div>
+	</section>
+
+	<section class="page" hidden>
+		<h1>Login or register</h1>
+	</section>
+
+	<section class="page" hidden>
+		<h1>About Yuetian Trading</h1>
+	</section>
+
+	<section class="page pg" hidden>
+		<h1>Frequently asked questions</h1>
+	</section>
+
+	<section class="page pg" hidden>
+		<h1>Safety tips</h1>
+	</section>
+
+	<section class="page pg" hidden>
+		<h1>Contact us</h1>
+	</section>
+
+	<section class="page pg" hidden>
+		<h1>Terms of use</h1>
+	</section>
+
+	<section class="page pg" hidden>
+		<h1>Privacy policy</h1>
+	</section>
+
 </main>
 
 <footer>
-    <div>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-        <a href="#safety">Safety tips</a>
-        <a href="#contact">Contact</a>
-        <a href="#term">Terms</a>
-    </div>
-    <p>© Yuetian Trading Enterprise | 2026</p>
+	<div>
+		<a href="#about">About</a><a href="#faq">FAQ</a><a href="#safety">Safety Tips</a>
+		<a href="#contact">Contact</a><a href="#terms">Terms</a><a href="#privacy">Privacy</a>
+	</div>
+	<p>© Yuetian Trading Enterprise | 2026</p>
 </footer>
 
 </body>
+
+</html>
